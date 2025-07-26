@@ -1,5 +1,5 @@
 # VBNet-FinalProj-DTR
 
-# Fixes:
+# Need to Fix:
 # - Problems with database connections.
 # - Relocate Database folder to "DailyTimeRecordApp" folder
