@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DailyTimeRecordDataSet7" targetNamespace="http://tempuri.org/DailyTimeRecordDataSet7.xsd" xmlns:mstns="http://tempuri.org/DailyTimeRecordDataSet7.xsd" xmlns="http://tempuri.org/DailyTimeRecordDataSet7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="DailyTimeRecordConnection" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DailyTimeRecordConnection (MySettings)" PropertyReference="ApplicationSettings.DailyTimeRecordApp.My.MySettings.GlobalReference.Default.DailyTimeRecordConnection" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblDTRTableAdapter" GeneratorDataComponentClassName="tblDTRTableAdapter" Name="tblDTR" UserDataComponentName="tblDTRTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DailyTimeRecordConnection (MySettings)" DbObjectName="tblDTR" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Name, [Date], TimeIn, TimeOut, [Total Hours] FROM tblDTR</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="TimeIn" DataSetColumn="TimeIn" />
+              <Mapping SourceColumn="TimeOut" DataSetColumn="TimeOut" />
+              <Mapping SourceColumn="Total Hours" DataSetColumn="Total Hours" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DailyTimeRecordDataSet7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DailyTimeRecordDataSet7" msprop:Generator_DataSetName="DailyTimeRecordDataSet7">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblDTR" msprop:Generator_RowEvHandlerName="tblDTRRowChangeEventHandler" msprop:Generator_RowDeletedName="tblDTRRowDeleted" msprop:Generator_RowDeletingName="tblDTRRowDeleting" msprop:Generator_RowEvArgName="tblDTRRowChangeEvent" msprop:Generator_TablePropName="tblDTR" msprop:Generator_RowChangedName="tblDTRRowChanged" msprop:Generator_RowChangingName="tblDTRRowChanging" msprop:Generator_TableClassName="tblDTRDataTable" msprop:Generator_RowClassName="tblDTRRow" msprop:Generator_TableVarName="tabletblDTR" msprop:Generator_UserTableName="tblDTR">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Date" msprop:Generator_ColumnPropNameInRow="_Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_UserColumnName="Date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TimeIn" msprop:Generator_ColumnPropNameInRow="TimeIn" msprop:Generator_ColumnPropNameInTable="TimeInColumn" msprop:Generator_ColumnVarNameInTable="columnTimeIn" msprop:Generator_UserColumnName="TimeIn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TimeOut" msprop:Generator_ColumnPropNameInRow="TimeOut" msprop:Generator_ColumnPropNameInTable="TimeOutColumn" msprop:Generator_ColumnVarNameInTable="columnTimeOut" msprop:Generator_UserColumnName="TimeOut" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Total_x0020_Hours" msprop:Generator_ColumnPropNameInRow="Total_Hours" msprop:Generator_ColumnPropNameInTable="Total_HoursColumn" msprop:Generator_ColumnVarNameInTable="columnTotal_Hours" msprop:Generator_UserColumnName="Total Hours" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
